@@ -4,13 +4,14 @@ import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MainNavComponent} from './main-nav/main-nav.component';
 import {LayoutModule} from '@angular/cdk/layout';
-import {MatButtonModule, MatCardModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule, MatGridListModule, MatMenuModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule, MatGridListModule, MatMenuModule, MatTableModule, MatPaginatorModule, MatSortModule} from '@angular/material';
 import {HomeComponent} from './home/home.component';
 import {CarteComponent} from './carte/carte.component';
 import {ReserveComponent} from './reserve/reserve.component';
 import {ContactComponent} from './contact/contact.component';
 import {AppRoutingModule} from './app-routing.module';
 import { MainDashComponent } from './main-dash/main-dash.component';
+import { DishTableComponent } from './dish-table/dish-table.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MainDashComponent } from './main-dash/main-dash.component';
     CarteComponent,
     ReserveComponent,
     ContactComponent,
-    MainDashComponent
+    MainDashComponent,
+    DishTableComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,10 @@ import { MainDashComponent } from './main-dash/main-dash.component';
     MatListModule,
     MatCardModule,
     MatGridListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
