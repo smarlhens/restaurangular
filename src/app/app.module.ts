@@ -4,12 +4,13 @@ import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MainNavComponent} from './main-nav/main-nav.component';
 import {LayoutModule} from '@angular/cdk/layout';
-import {MatButtonModule, MatCardModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule, MatGridListModule, MatMenuModule} from '@angular/material';
 import {HomeComponent} from './home/home.component';
 import {CarteComponent} from './carte/carte.component';
 import {ReserveComponent} from './reserve/reserve.component';
 import {ContactComponent} from './contact/contact.component';
 import {AppRoutingModule} from './app-routing.module';
+import { MainDashComponent } from './main-dash/main-dash.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {AppRoutingModule} from './app-routing.module';
     HomeComponent,
     CarteComponent,
     ReserveComponent,
-    ContactComponent
+    ContactComponent,
+    MainDashComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,9 @@ import {AppRoutingModule} from './app-routing.module';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
