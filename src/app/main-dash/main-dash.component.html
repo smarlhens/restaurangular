@@ -1,5 +1,5 @@
 <div class="grid-container">
-  <h1 class="mat-h1">Dashboard</h1>
+  <h1 class="mat-h1">Sur le pouce</h1>
   <mat-grid-list cols="2" rowHeight="350px">
     <mat-grid-tile *ngFor="let card of cards" [colspan]="card.cols" [rowspan]="card.rows">
       <mat-card class="dashboard-card">
@@ -15,8 +15,32 @@
             </mat-menu>
           </mat-card-title>
         </mat-card-header>
-        <mat-card-content class="dashboard-card-content">
-          <div>Card Content Here</div>
+        <mat-card-content>
+          <div *ngIf="card.id === 'brg'">
+            <p *ngFor="let burger of burgers">
+              <span>{{burger.title}}</span> :
+              <span>{{burger.description}}</span>
+              <span class="price">{{burger.price | currency:'EUR':'symbol':'1.2-2'}}</span>
+              <mat-divider></mat-divider>
+            </p>
+          </div>
+          <div *ngIf="card.id === 'glt'">
+            <p *ngFor="let galette of galettes">
+              <span>{{galette.title}} : </span>
+              <span>{{galette.description}}</span>
+              <span class="price">{{galette.price | currency:'EUR':symbol:'1.2-2'}}</span>
+              <mat-divider></mat-divider>
+            </p>
+          </div>
+          <div *ngIf="card.id === 'pzz'">
+            <p *ngFor="let pizza of pizzas">
+              <span>{{pizza.title}} : </span>
+              <span>{{pizza.description}} </span>
+              <span class="price">{{pizza.price | currency:'EUR':symbol:'1.2-2'}}</span>
+              <mat-divider></mat-divider>
+            </p>
+          </div>
+
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>

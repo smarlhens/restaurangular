@@ -1,6 +1,6 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatPaginator, MatSort } from '@angular/material';
-import { DishTableDataSource } from './dish-table-datasource';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {MatPaginator, MatSort} from '@angular/material';
+import {DishTableDataSource} from './dish-table-datasource';
 
 @Component({
   selector: 'dish-table',

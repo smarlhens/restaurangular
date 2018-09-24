@@ -1,7 +1,6 @@
+import {ComponentFixture, fakeAsync, TestBed} from '@angular/core/testing';
 
-import { fakeAsync, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { MainDashComponent } from './main-dash.component';
+import {MainDashComponent} from './main-dash.component';
 
 describe('MainDashComponent', () => {
   let component: MainDashComponent;
@@ -9,9 +8,9 @@ describe('MainDashComponent', () => {
 
   beforeEach(fakeAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ MainDashComponent ]
+      declarations: [MainDashComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(MainDashComponent);
     component = fixture.componentInstance;

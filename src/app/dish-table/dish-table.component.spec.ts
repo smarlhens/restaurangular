@@ -1,7 +1,6 @@
+import {ComponentFixture, fakeAsync, TestBed} from '@angular/core/testing';
 
-import { fakeAsync, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { DishTableComponent } from './dish-table.component';
+import {DishTableComponent} from './dish-table.component';
 
 describe('DishTableComponent', () => {
   let component: DishTableComponent;
@@ -9,9 +8,9 @@ describe('DishTableComponent', () => {
 
   beforeEach(fakeAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ DishTableComponent ]
+      declarations: [DishTableComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(DishTableComponent);
     component = fixture.componentInstance;
